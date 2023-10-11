@@ -14,7 +14,10 @@
       function check(){
         var a1 = document.getElementById("word").value;
         var a2 = document.getElementById("meaning").value;
-        if (a1 == "" ||  a2 == "") return;
+        if (a1 == "" ||  a2 == "") {
+          alert("용어와 단어의 의미를 작성해주세요");
+          return;
+        }
         else{
           alert("용어가 정상적으로 추가되었습니다!");
           gotolink();
