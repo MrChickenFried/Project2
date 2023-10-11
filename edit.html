@@ -9,7 +9,10 @@
       function check(){
         var a1 = document.getElementById("word").value;
         var a2 = document.getElementById("meaning").value;
-        if (a1 == "" ||  a2 == "") return;
+        if (a1 == "" ||  a2 == "") {
+          alert("용어와 단어의 의미를 작성해주세요");
+          return;
+        }
         else{
           alert("용어가 정상적으로 수정되었습니다!");
           gotolink();
@@ -112,6 +115,7 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+      
     </style>
 
     
@@ -223,10 +227,6 @@
             <label class="form-check-label" for="save-info">글을 비공개로 올리겠습니다.</label>
           </div>
 
-
-
-
-       
           </div>
 
           <hr class="my-4">
