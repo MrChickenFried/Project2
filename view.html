@@ -9,9 +9,10 @@
         window.location.href="https://teal-gumdrop-ee1914.netlify.app/edit.html";
       }
       function Remove(){
-        confirm("정말로 삭제하시겠습니까?");
-        window.location.href="https://teal-gumdrop-ee1914.netlify.app/remove.html";
+        if (confirm("정말로 삭제하시겠습니까?")) window.location.href="https://teal-gumdrop-ee1914.netlify.app/remove.html";
+        else return
       }
+
 
      
     </script>
