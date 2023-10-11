@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head>
+    <script>
+      function BackToList(){
+        window.location.href="https://teal-gumdrop-ee1914.netlify.app/index.html";
+      }
+      </script>
     <script src="color-modes.js"> </script>
     <script type="text/javascript">
       function gotolink(){
@@ -117,6 +122,8 @@
     
     <!-- Custom styles for this template -->
     <link href="checkout.css" rel="stylesheet">
+
+
   </head>
   <body class="bg-body-tertiary">
 
@@ -128,6 +135,9 @@
         <a class="p-2 text-dark" href="#">Example</a>
         <a class="p-2 text-dark" href="#">About</a>
       </nav>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-sm btn-outline-secondary" onclick="BackToList()">Back To List</a>
+      </div>
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
